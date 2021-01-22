@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="@dimen/five_dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarThemelight"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_cart_list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_pick_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty_dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_pick_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fcmusertype"
+            android:layout_toRightOf="@id/thumb_image"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:text="Pick a Date"
+            android:textColor="@color/black" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_selected_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fcmusertype"
+            android:layout_toRightOf="@id/thumb_image"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:text="please join to fanclub."
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividerView1"
+        android:layout_below="@id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray_light"
+        android:visibility="visible"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty_dp"
+        android:id="@+id/ll_pick_time"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fcmusertype"
+            android:layout_toRightOf="@id/thumb_image"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:text="Pick a Time Slot"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_selected_time"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fcmusertype"
+            android:layout_toRightOf="@id/thumb_image"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:text="please join to fanclub."
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <View
+        android:id="@+id/dividerView2"
+        android:layout_below="@id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray_light"
+        android:visibility="visible"></View>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:id="@+id/tv_reschedule"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_place_order"
+            android:text="Reschedule"
+            android:textSize="@dimen/twenty_dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary">
+
+        </TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

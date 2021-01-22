@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/five_dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/ten_dp"
+        android:id="@+id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_name_pbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ticket_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fcmusertype"
+                android:layout_toRightOf="@id/thumb_image"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="please join to fanclub."
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <me.himanshusoni.quantityview.QuantityView
+            android:id="@+id/quantityView_ticket"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:qv_addButtonBackground="@drawable/add_selector"
+            app:qv_addButtonTextColor="@color/white"
+            app:qv_quantity="0"
+            app:qv_minQuantity="0"
+            app:qv_removeButtonBackground="@drawable/remove_selector"
+            app:qv_removeButtonTextColor="@color/white" />
+    </LinearLayout>
+    <View
+        android:id="@+id/dividerView"
+        android:layout_below="@id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray_light"
+        android:visibility="visible"></View>
+</RelativeLayout>

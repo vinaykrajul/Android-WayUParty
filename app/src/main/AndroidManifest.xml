@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.acculytixs.mobile.wayuparty">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+
+    <application
+
+        android:name=".application.WayUPartyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activitys.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.MainActivity"></activity>
+        <activity android:name=".activitys.RestaurantDetailActivity"></activity>
+        <activity android:name=".activitys.ServicesActivity"></activity>
+        <activity android:name=".activitys.CategoryServiceListActivity"></activity>
+        <activity android:name=".activitys.AddToCartActivity"></activity>
+        <activity android:name=".activitys.LoginAcitvity"></activity>
+        <activity android:name=".activitys.CustomizePackageActivity">
+        </activity>
+        <activity android:name=".activitys.OrderDetialsActivity"></activity>
+        <activity android:name=".activitys.ProfileActivity"></activity>
+        <activity android:name=".activitys.EditProfileActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+        </activity>
+        <activity android:name=".activitys.OrderRescheduleActivity">
+
+        </activity>
+        <activity android:name=".activitys.VendorEventsActivity"></activity>
+        <activity android:name=".activitys.EventsDetailActivity"></activity>
+        <activity android:name=".activitys.EventTimeSlotsActivity"></activity>
+        <activity android:name=".activitys.EventTicketListActivity"></activity>
+        <activity android:name=".activitys.TermsAndConditionsAcitivity"></activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name=".activitys.SignUpActivity"></activity>
+        <activity android:name=".activitys.ForgotPasswordActivity"></activity>
+        <activity android:name=".activitys.SubmitCodeActivity"></activity>
+    </application>
+
+
+</manifest>

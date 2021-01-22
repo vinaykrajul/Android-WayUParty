@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimary"
+        android:text="chicken machuria">
+
+    </CheckBox>
+
+</LinearLayout>

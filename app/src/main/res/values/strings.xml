@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WayUParty</string>
+
+
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_cart">Cart</string>
+    <string name="bottom_nav_orders">Orders</string>
+
+    <string name="bottom_nav_user">Profile</string>
+    <string name="bottom_nav_signout">Sign out</string>
+
+
+    <string name="validation_username">Please Enter User Name</string>
+    <string name="validation_email">Please Enter your Email Id</string>
+    <string name="validation_verify_email">Please Enter your Email Id</string>
+    <string name="validation_confirm_password">Please confirm Password</string>
+    <string name="validation_password">Please enter Password</string>
+    <string name="validation_number" translatable="false">Please enter valid number</string>
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+</resources>

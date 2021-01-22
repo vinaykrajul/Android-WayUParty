@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_emptycart"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bar">
+    </ImageView>
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="No orders placed yet"/>
+    <TextView
+        android:id="@+id/tv_browse_restaurants"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:padding="@dimen/ten_dp"
+        android:background="@drawable/text_border"
+        android:text="Browse Restuarants">
+
+    </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_cart_list"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:id="@+id/rv_order_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

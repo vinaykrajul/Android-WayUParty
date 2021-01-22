@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@drawable/dialog_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/fcmusertype"
+        android:layout_toRightOf="@id/thumb_image"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:gravity="center"
+        android:text="Restuarent has entry restrictions. Guests allowed. Stags not allowed."
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_margin="@dimen/ten_dp"
+        android:id="@+id/menLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_men"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_category_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fcmusertype"
+                android:layout_toRightOf="@id/thumb_image"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="Men"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <me.himanshusoni.quantityview.QuantityView
+            android:id="@+id/men_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:qv_addButtonBackground="@drawable/add_selector"
+            app:qv_addButtonTextColor="@color/white"
+            app:qv_quantity="0"
+            app:qv_minQuantity="0"
+            app:qv_removeButtonBackground="@drawable/remove_selector"
+            app:qv_removeButtonTextColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="@dimen/ten_dp"
+        android:id="@+id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_name_pbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fcmusertype"
+                android:layout_toRightOf="@id/thumb_image"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="Women"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <me.himanshusoni.quantityview.QuantityView
+            android:id="@+id/women_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:qv_addButtonBackground="@drawable/add_selector"
+            app:qv_addButtonTextColor="@color/white"
+            app:qv_quantity="0"
+            app:qv_minQuantity="0"
+            app:qv_removeButtonBackground="@drawable/remove_selector"
+            app:qv_removeButtonTextColor="@color/white" />
+    </LinearLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_addtocart"
+        android:layout_margin="@dimen/twenty_dp"
+        android:text="Confirm"
+        android:paddingLeft="@dimen/twenty_dp"
+        android:paddingRight="@dimen/twenty_dp"
+        android:textColor="@color/white"
+        android:background="@drawable/background_submit_button"
+        android:layout_gravity="center_horizontal">
+
+    </Button>
+
+</LinearLayout>

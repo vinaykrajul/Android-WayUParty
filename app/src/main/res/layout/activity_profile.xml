@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="@dimen/five_dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarThemelight"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_emptycart"
+            android:visibility="gone"
+            android:layout_margin="@dimen/twenty_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/music_note">
+            </ImageView>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Login to set your music and drinks preferences. Start paartying your way"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:layout_margin="@dimen/twenty_dp"
+                android:text="Login"
+                android:background="@drawable/button_bg"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/twenty_dp"
+                android:paddingRight="@dimen/twenty_dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal">
+
+            </Button>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/twenty_dp"
+                android:src="@drawable/wine_glass">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_bg">
+    </ImageView>
+        <com.acculytixs.mobile.wayuparty.application.ProfileImage
+            android:id="@+id/profil_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:profile_radius="50dp" />
+
+        <ImageView
+            android:id="@+id/edit_profile"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/twenty_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editprofile">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="trigunreddyjunuthula@gamil.com">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:text="Name"
+                android:textSize="@dimen/sixteen_sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textColor="@color/sign_up_tab_text_color"
+                android:text="Trigun Reddy" />
+
+            <View
+                android:id="@+id/dividerView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/gray_light"
+                android:visibility="visible"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:text="Date Of Birth"
+                android:textSize="@dimen/sixteen_sp"/>
+
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textColor="@color/sign_up_tab_text_color"
+                android:text="Trigun Reddy" />
+
+            <View
+                android:id="@+id/dividerView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/gray_light"
+                android:visibility="visible"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:text="Mobile Number"
+                android:textSize="@dimen/sixteen_sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textColor="@color/sign_up_tab_text_color"
+                android:text="Trigun Reddy" />
+
+            <View
+                android:id="@+id/dividerView3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/gray_light"
+                android:visibility="visible"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:text="Preffered Music"
+                android:textSize="@dimen/sixteen_sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_preffered_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textColor="@color/sign_up_tab_text_color"
+                android:text="Trigun Reddy" />
+
+            <View
+                android:id="@+id/dividerView2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/gray_light"
+                android:visibility="visible"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:text="Preffered Drinks"
+                android:textSize="@dimen/sixteen_sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_preffere_drinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textColor="@color/sign_up_tab_text_color"
+                android:text="Trigun Reddy" />
+
+            <View
+                android:id="@+id/dividerView4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/gray_light"
+                android:visibility="visible"></View>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+        <ProgressBar
+            android:id="@+id/main_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</LinearLayout>

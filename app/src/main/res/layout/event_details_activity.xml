@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="@dimen/five_dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarThemelight"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <LinearLayout
+         android:visibility="gone"
+         android:id="@+id/ll_cart_item"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+             <androidx.core.widget.NestedScrollView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_event_baneer"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    android:scaleType="fitXY"
+                    android:layout_margin="@dimen/ten_dp"
+                    android:src="@drawable/sample_image"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <View
+            android:id="@+id/dividerView"
+            android:layout_below="@id/mainlayoutprofile"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray_light"
+            android:visibility="visible"></View>
+        <RelativeLayout
+            android:id="@+id/rsname"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/twelve_dp">
+
+            <TextView
+                android:id="@+id/tv_event_type"
+                android:text="Really Long Scrolling "
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5dip"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_marginBottom="@dimen/twelve_dp">
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/location_icon">
+            </ImageView>
+
+            <TextView
+                android:layout_toRightOf="@id/location"
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Gachibowli,Hyderabad,telangana, india" />
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/twelve_dp">
+
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/clock">
+            </ImageView>
+
+            <TextView
+                android:layout_toRightOf="@id/time"
+                android:id="@+id/tv_timings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Cost for two Rs.3500" />
+
+        </RelativeLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_moreinfo"
+                android:text="More information"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:padding="5dip"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_marginBottom="@dimen/twelve_dp">
+
+                <ImageView
+                    android:id="@+id/music"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/music">
+                </ImageView>
+
+                <TextView
+                    android:layout_toRightOf="@id/music"
+                    android:id="@+id/tv_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Gachibowli,Hyderabad,telangana, india" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/twelve_dp">
+
+                <ImageView
+                    android:id="@+id/hours"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/hour">
+                </ImageView>
+
+                <TextView
+                    android:layout_toRightOf="@id/hours"
+                    android:id="@+id/tv_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Cost for two Rs.3500" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/twelve_dp">
+
+                <ImageView
+                    android:id="@+id/language"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/language">
+                </ImageView>
+
+                <TextView
+                    android:layout_toRightOf="@id/language"
+                    android:id="@+id/tv_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Cost for two Rs.3500" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/twelve_dp">
+
+                <ImageView
+                    android:id="@+id/age"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/user_event">
+                </ImageView>
+
+                <TextView
+                    android:layout_toRightOf="@id/age"
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Cost for two Rs.3500" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:text="More information"
+            android:singleLine="true"
+            android:layout_margin="@dimen/ten_dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+             </androidx.core.widget.NestedScrollView>
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_book"
+                android:text="Book"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/twenty_dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary">
+
+            </TextView>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/main_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+</LinearLayout>

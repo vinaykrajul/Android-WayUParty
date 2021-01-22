@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/five_dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/ten_dp"
+        android:id="@+id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/thumb_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_toRightOf="@+id/tv_serial_number"
+            android:src="@drawable/sample_image" />
+
+        <LinearLayout
+            android:id="@+id/ll_name_pbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_category_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fcmusertype"
+                android:layout_toRightOf="@id/thumb_image"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="please join to fanclub."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/mainlayoutprofile"
+                android:layout_height="wrap_content"
+                android:text="jul 1 2020,9 56"
+                android:singleLine="true"
+                android:lines="1"
+                android:textColor="@color/header_bg_color"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/mainlayoutprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:lines="1"
+                    android:text="jul 1 2020,9 56" />
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/mainlayoutprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Rs.420" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Guests"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/mainlayoutprofile"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="@dimen/twelve_sp"
+                android:text="jul 1 2020,9 56" />
+            <TextView
+                android:id="@+id/tv_availabilty"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/mainlayoutprofile"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="@dimen/twelve_sp"
+                android:text="jul 1 2020,9 56" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_leaderboard_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:gravity="bottom|right"
+            android:src="@drawable/ic_right_arrow" />
+    </LinearLayout>
+    <View
+        android:id="@+id/dividerView"
+        android:layout_below="@id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray_light"
+        android:visibility="visible"></View>
+</RelativeLayout>

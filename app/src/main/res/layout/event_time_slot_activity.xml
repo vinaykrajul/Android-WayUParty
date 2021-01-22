@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="@dimen/five_dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarThemelight"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/ll_cart_item"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rsname"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/twelve_dp">
+
+                        <TextView
+                            android:id="@+id/tv_event_type"
+                            android:text="Really Long Scrolling "
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:padding="5dip"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            <GridView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:id="@+id/gridview_timslot"
+                android:layout_width="match_parent"
+                android:numColumns="2"
+                android:layout_height="wrap_content">
+            </GridView>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+</LinearLayout>

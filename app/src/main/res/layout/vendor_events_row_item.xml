@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cv_rest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rsname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve_dp">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text="Bar BQ"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_dp"
+                android:visibility="visible" />
+            <TextView
+                android:layout_below="@+id/tv_day"
+                android:id="@+id/date"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/faneventscolor"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="9">
+            </TextView>
+
+            <TextView
+                android:layout_below="@+id/date"
+                android:id="@+id/month"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twenty_dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:text="JANUARY">
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="@dimen/five_dp"
+                   android:layout_marginTop="@dimen/twenty_dp">
+
+                   <ImageView
+                       android:id="@+id/money"
+                       android:layout_width="18dp"
+                       android:layout_height="18dp"
+                       android:src="@drawable/clock_black">
+                   </ImageView>
+
+                   <TextView
+                       android:layout_toRightOf="@id/money"
+                       android:id="@+id/tv_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/eight_dp"
+                       android:layout_gravity="center"
+                       android:maxLines="1"
+                       android:ellipsize="end"
+                       android:text="Cost for two Rs.3500" />
+
+               </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_marginBottom="@dimen/twelve_dp">
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/location">
+            </ImageView>
+
+            <TextView
+                android:layout_toRightOf="@id/location"
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Cost for two Rs.3500" />
+
+        </RelativeLayout></LinearLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_image"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+        <!--<LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:layout_marginBottom="@dimen/twelve_dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tvLikesCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_like_inactive"
+                android:drawablePadding="@dimen/twelve_dp"
+                android:text="gachibowli,Hyderabad,telangana, india" />
+
+            <TextView
+                android:id="@+id/tv_comments_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_comments"
+                android:drawablePadding="@dimen/twelve_dp"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_share"
+                android:drawablePadding="@dimen/twelve_dp"
+                android:text="0" />
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_parent">
+
+    <RelativeLayout
+        android:id="@+id/rsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twelve_dp">
+
+        <TextView
+            android:id="@+id/tv_res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twelve_dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="RED LION"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/info"
+            android:layout_marginRight="@dimen/twelve_dp"
+            android:layout_width="20dp"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:layout_height="20dp"
+            android:src="@drawable/information">
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rscity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twelve_dp">
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twelve_dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="Vijayawada"
+            android:visibility="visible" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/header_bg_color"
+            android:padding="6dp"
+            android:id="@+id/ll_cancelleditems"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/items_cancelled"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:layout_height="20dp"
+            android:textColor="@color/white"
+           android:text="2 items Cancelled">
+        </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rsamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twelve_dp">
+
+        <TextView
+            android:id="@+id/tv_res_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twelve_dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="53994.0"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/order_date"
+            android:layout_marginRight="@dimen/twelve_dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:layout_height="20dp"
+            android:text="Nov 22 2020">
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layerType="software"
+        android:layout_marginTop="@dimen/five_dp"
+        android:background="@drawable/horizontal_dotted_line"></TextView>
+
+    <TextView
+        android:id="@+id/tv_order_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twelve_dp"
+        android:text="1 * miler lite lazer beer beer">
+
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_addtocart"
+        android:layout_margin="@dimen/twenty_dp"
+        android:text="Rate Order"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:paddingLeft="@dimen/twenty_dp"
+        android:paddingRight="@dimen/twenty_dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal">
+
+    </Button>
+
+    <View
+        android:id="@+id/dividerView4"
+        android:layout_below="@id/mainlayoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/black"
+        android:visibility="visible"></View>
+
+</LinearLayout>
